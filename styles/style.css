@@ -262,6 +262,50 @@
      font-size: 20px;
  }
 
+ .sponsor-title {
+     margin-bottom: 20px;
+     font: 800;
+     font-size: 2.4em;
+ }
+
+ .sponsor-main {
+     margin-top: 180px;
+     text-align: center;
+ }
+
+ .sponsor-container {
+     margin-top: 50px;
+     /* display: flex; */
+     display: grid;
+     grid-template-columns: repeat(5, 1fr);
+     gap: 100px;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .sponsor-container img {
+     width: 50px;
+ }
+
+ .image-name {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .company-name {
+     margin-top: 10px;
+ }
+
+ .footer-container {
+    margin-top: 100px;
+     background-color: rgb(253, 248, 243, 255);
+     text-align: center;
+     padding: 40px;
+ }
+
+
 
  /* responsive small device */
 
@@ -308,7 +352,8 @@
          text-align: center;
      }
 
-     .vertical-box,.card-box {
+     .vertical-box,
+     .card-box {
          width: 100%;
          padding: 0px;
      }
@@ -330,5 +375,14 @@
 
      .card-box {
          padding: 20px 0px;
+     }
+
+     .sponsor-container {
+         margin-top: 50px;
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         gap: 100px;
+         justify-content: center;
+         align-items: center;
      }
  }
