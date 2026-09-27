@@ -147,13 +147,84 @@
      margin: 50px 0px;
  }
 
+ /* features enjoy style */
+
+ .feature-enjoy-container {
+     margin-top: 80px;
+     display: flex;
+     gap: 30px;
+ }
+
+ .feature-enjoy-title {
+     font-weight: 700;
+     font-size: 2em;
+     margin-bottom: 20px;
+     border-left: 5px solid rgb(255, 140, 0);
+     padding-left: 10px;
+ }
+
+
+ .vertical-box {
+     max-width: 800px;
+     background-color: rgb(255, 255, 255);
+     padding: 30px;
+     box-shadow: 0px 4px 30px rgba(147, 10, 10, 0.06);
+     transition: transform 0.3s ease;
+ }
+
+ .vertical-box:hover {
+     transform: translateX(6px)
+ }
+
+ .vertical-info-title {
+     margin-bottom: 20px;
+     font-weight: 800;
+     font-size: 1.2rem;
+ }
+
+ .vertical-image {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .vertical-image img {
+     width: 400px;
+     height: 600px;
+     object-fit: cover;
+     object-position: center;
+     border-radius: 20px;
+
+ }
+
+ .Experience-btn {
+     margin-top: -50px;
+     margin-right: 350px;
+     border: none;
+     padding: 20px 30px;
+     border-radius: 10px;
+     color: white;
+ }
+
+ .years-style {
+     font-weight: 600;
+     color: white;
+     font-size: 2em;
+     text-align: center;
+ }
+
+
+
+
  /* responsive small device */
 
  @media screen and (max-width:576px) {
 
      .display-flex,
      ul,
-     .team-quice-feature {
+     .team-quice-feature,
+     .feature-enjoy-container {
          flex-direction: column;
      }
 
@@ -185,5 +256,22 @@
          text-align: center;
      }
 
-     
+     .vertical-box {
+         width: 100%;
+         padding: 0px;
+     }
+
+     .Experience-btn {
+         margin-top: -20px;
+         margin-left: 350px;
+         border: none;
+         padding: 20px 30px;
+         border-radius: 10px;
+     }
+
+     .vertical-box {
+        
+         box-shadow: 0px 4px 30px rgba(147, 10, 10, 0.06);
+         transition: transform 0.3s ease;
+     }
  }
